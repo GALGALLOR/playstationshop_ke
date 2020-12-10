@@ -18,24 +18,19 @@ body{
     margin-right:20px;
 }
 .navbar .logo{
-    font-size:40px;
-    border: 3px solid cyan;
-    border-radius: 1cm;
-    padding:10px;
-    background:rgb(6, 192, 192);
-    color:white;
-    font-family:'Courier New', Courier, monospace;
-    margin-left:10px;
-    transition:0.5s;
+    margin-left:20px;
+    padding:0;
+    background:red;
 }
 .navbar{
     margin-top:20px;
-    margin-bottom:40px;
+    margin-bottom:10px;
     position: relative;;
 }
 
 .navbar .logo:hover{
-    background:rgb(56, 99, 99);
+    width:200px;
+    background:rgb(167, 92, 92);
 }
 .navbar ul li:hover{
     background:grey;
@@ -44,18 +39,21 @@ body{
 
 .slides{
     overflow:hidden;
+    background: rgb(190, 72, 145);
 }
 .slides figure{
     position:relative;
     width:500%;
     margin:0;
     left:0;
-    animation:20s slider infinite;
+    animation:25s slider infinite;
 }
 
 .slides figure img{
-    width:20%;
+    width:12.9%;
+    padding:0 3.5%;
     float:left;
+    border:1px solid red;
     height:600px;
 }
 
@@ -65,38 +63,468 @@ body{
     color:rgb(0, 0, 0);
     border-bottom:1px solid rgb(0, 0, 0);
     padding:0;
-    width:20%;
+    width:25%;
     margin-left:40%;
 
 }
 
+
 @keyframes slider{
+0%{
+    
+    left:0%;
+}
+20%{
+    left:-100%;
+}
+40%{
+    left:-200%;
+}
+60%{
+    left:-300%;
+}
+80%{
+    left:-400%;
+}
+
+100%{
+    left:-400%;
+}
+100%{
+    left:0%;
+}
+
+
+}
+
+a{
+    text-decoration: none;
+    color:black;
+}
+
+
+.about{
+    margin-top:500px;
+    background:rgb(94, 87, 87);
+}
+
+input[type=checkbox]{
+    display:none;
+}
+
+.navigate_slideshow{
+    text-align:center;
+
+}
+.navigate_slideshow label:nth-child(1) {
+    padding:5px;
+    display:inline-block;
+    border-radius: 100%;
+    animation:25s dot1 infinite;
+}
+
+.navigate_slideshow label:nth-child(2) {
+    padding:5px;
+    display:inline-block;
+    border-radius: 100%;
+    animation:25s dot2 infinite;
+}
+
+.navigate_slideshow label:nth-child(3) {
+    padding:5px;
+    display:inline-block;
+    border-radius: 100%;
+    animation:25s dot3 infinite;
+}
+
+.navigate_slideshow label:nth-child(4) {
+    padding:5px;
+    display:inline-block;
+    border-radius: 100%;
+    animation:25s dot4 infinite;
+}
+
+.navigate_slideshow label:nth-child(5) {
+    padding:5px;
+    display:inline-block;
+    border-radius: 100%;
+    animation:25s dot5 infinite;
+}
+
+@keyframes dot1{
     0%{
-        left:0;
+        background:red;
     }
     20%{
-        left:0;
+        background:grey;
     }
-    25%{
-        left:-100%;
+    40%{
+        background:grey;
     }
-    45%{
-        left:-100%;
+    60%{
+        background:grey;
     }
-    50%{
-        left:-200%;
-    }
-    70%{
-        left:-200;
-    }
-    75%{
-        left:-300%;
-    }
-    95%{
-        left:-300%;
+    80%{
+        background:grey;
     }
     100%{
-        left:-400%;
+        background:grey;
+    }
+}
+@keyframes dot2{
+    0%{
+        background:grey;
+    }
+    20%{
+        background:red;
+    }
+    40%{
+        background:grey;
+    }
+    60%{
+        background:grey;
+    }
+    80%{
+        background:grey;
+    }
+    100%{
+        background:grey;
+    }
+}
+@keyframes dot3{
+    0%{
+        background:grey;
+    }
+    20%{
+        background:grey;
+    }
+    40%{
+        background:red;
+    }
+    60%{
+        background:grey;
+    }
+    80%{
+        background:grey;
+    }
+    100%{
+        background:grey;
+    }
+}
+@keyframes dot4{
+    0%{
+        background:grey;
+    }
+    20%{
+        background:grey;
+    }
+    40%{
+        background:grey;
+    }
+    60%{
+        background:red;
+    }
+    80%{
+        background:grey;
+    }
+    100%{
+        background:grey;
+    }
+}
+
+@keyframes dot5{
+    0%{
+        background:grey;
+    }
+    20%{
+        background:grey;
+    }
+    40%{
+        background:grey;
+    }
+    60%{
+        background:grey;
+    }
+    80%{
+        background:red;
+    }
+    100%{
+        background:red;
+    }
+}
+
+.topic img ,.topwears img,.bottomwears img,.outwears img,.footwears img,.accessories img {
+    width:30%;
+}
+
+#general_img1,#image101,#img201,#image301,#img11,#img21,#img31,#img401,#img403,#img405,#img41,#img51,#img61,#img71,#img81{
+    opacity:1;
+    position:relative;
+    transition:0.5s;
+}
+#general_img2,#image102,#img202,#image302,#img402,#img404,#img406,#img12,#img22,#img32,#img42,#img52,#img62,#img72,#img82,#img92{
+    opacity:1;
+    position:relative;
+    left:-30.5%;    
+    transition:0.5s;
+}
+
+#img91{
+    opacity:1;
+    position:relative;
+    transition:0.5s;
+}
+
+#general_img2:hover,#image102:hover,#img22:hover,#img12:hover,#img32:hover,#img42:hover,#img52:hover,#img62:hover,#img72:hover,#img82:hover,#img92:hover,#img406:hover,#img404:hover,#img402:hover{
+    opacity:0;
+}
+
+#img202:hover{
+    opacity:0;
+}
+#image302:hover{
+    opacity:0;
+}
+
+.second-topwear-images{
+    position:absolute;
+    top:168%;
+    left:35%;
+    width:100%;
+}
+.third-topwear-images{
+    position:absolute;
+    top:168%;
+    left:69%;
+    width:100%;
+}
+
+.second-bottom-wears{
+    position:absolute;
+    top:260%;
+    left:35%;
+    width:100%;
+}
+.third-bottom-wears{
+    position:absolute;
+    top:260%;
+    left:69%;
+    width:100%;
+}
+.second-out-wears{
+    position:absolute;
+    top:352%;
+    left:35%;
+    width:100%;
+}
+.third-out-wears{
+    position:absolute;
+    top:352%;
+    left:69%;
+    width:100%;
+}
+
+.second-foot-wears{
+    position:absolute;
+    top:444%;
+    left:35%;
+    width:100%;
+}
+.third-foot-wears{
+    position:absolute;
+    top:444%;
+    left:69%;
+    width:100%;
+}
+
+.second-accessories{
+    position:absolute;
+    top:535%;
+    left:35%;
+    width:100%;
+}
+.third-accessories{
+    position:absolute;
+    top:535%;
+    left:69%;
+    width:100%;
+}
+.accessories img{
+    height:70vh;
+}
+
+.topic1{
+
+}
+.topic2{
+    
+}
+.topic3{
+
+}
+
+h1{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:700px){
+    body{
+        background:purple;
+    }
+    .slides{
+        width:100%;
+    }
+    .navbar .logo{
+        padding:0;
+    }
+    .slides h1{
+        width:50%;
+    }
+    .accessories img ,.topwears img ,.bottomwears img,.outwears img,.footwears img{
+        width:40%;
+        height:100%;
+        
+    }
+    #image102,#img202,#image302{
+        opacity:1;
+        position:relative;
+        left:-40.5%;    
+        transition:0.5s;
+    }
+    .second-topwear-images{
+        position:absolute;
+        top:175%;
+        left:50%;
+        width:100%;
+    }
+    .third-accessories,.third-topwear-images,.third-bottom-wears,.third-foot-wears,.third-out-wears{
+        display: none;
+    }
+    .second-bottom-wears{
+        position:absolute;
+        top:243.5%;
+        left:50%;
+        width:100%;
+    }
+    .second-out-wears{
+        position:absolute;
+        top:311%;
+        left:50%;
+        width:100%;
+    }
+    .second-foot-wears{
+        position:absolute;
+        top:380%;
+        left:50%;
+        width:100%;
+    }
+    .second-accessories{
+        position:absolute;
+        top:447%;
+        left:50%;
+        width:100%;
+    }
+
+    #img12,#img22,#img402,#img404{
+        opacity:1;
+        position:relative;
+        left:-40.5%;    
+        transition:0.5s;
+    }
+    #img42,#img52,#img72,#img82{
+        opacity:1;
+        position:relative;
+        left:-40.5%;    
+        transition:0.5s;
+    }
+
+
+}
+
+@media(max-width:1000px) and (min-width:701px) {
+    body{
+        background: red;
+    }
+    .slides{
+        width:100%;
+    }
+    .navbar .logo{
+        padding:0;
+    }
+    .slides h1{
+        width:50%;
+    }
+    .accessories img ,.topwears img ,.bottomwears img,.outwears img,.footwears img{
+        width:40%;
+        height:100%;
+        
+    }
+    #image102,#img202,#image302{
+        opacity:1;
+        position:relative;
+        left:-40.5%;    
+        transition:0.5s;
+    }
+    .second-topwear-images{
+        position:absolute;
+        top:175%;
+        left:50%;
+        width:100%;
+    }
+    .third-accessories,.third-topwear-images,.third-bottom-wears,.third-foot-wears,.third-out-wears{
+        display: none;
+    }
+    .second-bottom-wears{
+        position:absolute;
+        top:269%;
+        left:50%;
+        width:100%;
+    }
+    .second-out-wears{
+        position:absolute;
+        top:363%;
+        left:50%;
+        width:100%;
+    }
+    .second-foot-wears{
+        position:absolute;
+        top:456%;
+        left:50%;
+        width:100%;
+    }
+    .second-accessories{
+        position:absolute;
+        top:550%;
+        left:50%;
+        width:100%;
+        height:78vh;
+    }
+
+    #img12,#img22,#img402,#img404{
+        opacity:1;
+        position:relative;
+        left:-40.5%;    
+        transition:0.5s;
+    }
+    #img42,#img52,#img72,#img82{
+        opacity:1;
+        position:relative;
+        left:-40.5%;    
+        transition:0.5s;
     }
 
 }
