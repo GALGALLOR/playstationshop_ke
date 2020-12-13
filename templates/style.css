@@ -513,7 +513,7 @@ h1{
     text-align: center;
 }
 
-@media (max-width:800px){
+@media (max-width:1000px){
     .homedisplay img{
         height:100%;
     }
