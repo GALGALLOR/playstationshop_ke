@@ -21,6 +21,7 @@ body{
     margin-left:20px;
     padding:0;
     background:red;
+    transition: 1s;
 }
 .navbar{
     margin-top:20px;
@@ -31,6 +32,7 @@ body{
 .navbar .logo:hover{
     width:200px;
     background:rgb(167, 92, 92);
+    filter:grayscale(300%);
 }
 .navbar ul li:hover{
     background:grey;
@@ -48,6 +50,7 @@ body{
     left:0;
     animation:25s slider infinite;
 }
+
 
 .slides figure img{
     width:12.9%;
@@ -104,7 +107,7 @@ a{
 
 
 .about{
-    background:rgb(94, 87, 87);
+    background:rgb(160, 45, 45);
 }
 
 input[type=checkbox]{
@@ -512,14 +515,89 @@ h1{
 .homedisplay h1{
     text-align: center;
 }
+.threeBars{
+    display: none;
+}
+input{
+    display:none
+}
+.contact_us ul li{
+    display: inline-block;
+    margin-left:1cm;
+    padding:2.5%;
 
-@media (max-width:1000px) and (min-width:500px) {
-    .homedisplay img{
-        height:100%;
-    }
+}
+
+.about .help ul{
+    list-style-type: none;
+    margin:0 10% 0 0;
+    position:static;
+
+}
+.about .help ul li{
+    display:inline-block;
+    position: static;
+}
+.about-us{
+    margin-left:10px;
+}
+
+.x{
+    font-weight:bolder;
+    color:rgb(255, 129, 129);
+}
+.about{
+    text-align:center;
 }
 
 
 
+@media (max-width:1000px) and (min-width:500px) {
 
 
+    .homedisplay img{
+        height:100%;
+    }
+    .slides{
+        width:100%;
+    }
+    .threeBars{
+        display:inline-block;
+        position:absolute;
+        top:30px;
+        right:30px;
+    }
+    .navbar ul li{
+        display:block;
+        margin-top:10%;
+    }
+    .navbar ul{
+        position:absolute;
+        background:red;
+        opacity:1;
+        top:0%;
+        width:100%;
+        height:475vh;
+        left:-200%;
+        transition:0.5s;
+    }
+    #threeBars:checked ~ .navbar .threeBars{
+        position:fixed;
+    }
+    #threeBars:checked ~ .slides{
+        transition:0.5s;
+        position:relative;
+        left:-300%;
+    }
+    #threeBars:checked ~ .navbar ul{
+        left:0;
+    }
+    
+@media (max-width:500px) {
+    .homedisplay img{
+        height:20vh;
+    }
+    .slides{
+        width:100%;
+    }
+}
