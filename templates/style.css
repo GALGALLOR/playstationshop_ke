@@ -1,7 +1,7 @@
 body{
     padding: 0;
     margin:0;
-
+    
 }
 
 .navbar ul li{
@@ -513,7 +513,7 @@ h1{
     text-align: center;
 }
 
-@media (max-width:1000px){
+@media (max-width:1000px) and (min-width:500px) {
     .homedisplay img{
         height:100%;
     }
