@@ -1,6 +1,7 @@
 body{
     padding: 0;
     margin:0;
+    background:rgb(253, 251, 251);
     
 }
 
@@ -25,8 +26,9 @@ body{
 }
 .navbar{
     margin-top:20px;
-    margin-bottom:10px;
+    margin-bottom:0;
     position: relative;;
+    background:rgb(30, 150, 248);
 }
 
 .navbar .logo:hover{
@@ -41,7 +43,7 @@ body{
 
 .slides{
     overflow:hidden;
-    background: rgb(190, 72, 145);
+    background: rgb(80, 79, 79);
 }
 .slides figure{
     position:relative;
@@ -550,6 +552,9 @@ input{
     text-align:center;
 }
 
+.logo img{
+    border-radius:10px;
+}
 
 
 @media (max-width:1000px) and (min-width:500px) {
@@ -573,7 +578,7 @@ input{
     }
     .navbar ul{
         position:absolute;
-        background:red;
+        background:rgb(28, 146, 201);
         opacity:1;
         top:0%;
         width:100%;
@@ -592,12 +597,49 @@ input{
     #threeBars:checked ~ .navbar ul{
         left:0;
     }
-    
+    .about{
+        width:100%;
+    }
+    #threeBars:checked ~ .about{
+        position:absolute;
+    }
+}
 @media (max-width:500px) {
     .homedisplay img{
         height:20vh;
     }
     .slides{
         width:100%;
+    }
+    .threeBars{
+        display:inline-block;
+        position:absolute;
+        top:30px;
+        right:30px;
+    }
+    .navbar ul li{
+        display:block;
+        margin-top:10%;
+    }
+    .navbar ul{
+        position:absolute;
+        background:rgb(28, 146, 201);
+        opacity:1;
+        top:0%;
+        width:100%;
+        height:475vh;
+        left:-200%;
+        transition:0.5s;
+    }
+    #threeBars:checked ~ .navbar .threeBars{
+        position:fixed;
+    }
+    #threeBars:checked ~ .slides{
+        transition:0.5s;
+        position:relative;
+        left:-300%;
+    }
+    #threeBars:checked ~ .navbar ul{
+        left:0;
     }
 }
