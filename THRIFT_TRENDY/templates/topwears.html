@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Topwears</title>
     <link rel='stylesheet' href='style.css'>
     <script src="https://kit.fontawesome.com/2b094ef000.js" crossorigin="anonymous"></script>
     <link rel='icon' href='https://instagram.fnbo10-1.fna.fbcdn.net/v/t51.2885-19/s150x150/80099797_526211448244916_6398459191714906112_n.jpg?_nc_ht=instagram.fnbo10-1.fna.fbcdn.net&_nc_ohc=MxvpHbJMHmwAX8mfe7i&tp=1&oh=419488ddb55db525cd49218d74ec1122&oe=5FFAFC56'>
 </head>
-<body>
+<body onscroll="scrolly()" >
 
     <input type='checkbox' id='add-how-to-purchase'>
     <input type='checkbox' id='add-how-to-track-purchase'>
@@ -16,26 +16,41 @@
     <input type="checkbox" id="threeBars">
 
     <div class="navbar" id='navbar' >
-        <a class='logo' href=''><img alt='brand Image' src='https://instagram.fnbo10-1.fna.fbcdn.net/v/t51.2885-19/s150x150/80099797_526211448244916_6398459191714906112_n.jpg?_nc_ht=instagram.fnbo10-1.fna.fbcdn.net&_nc_ohc=MxvpHbJMHmwAX8mfe7i&tp=1&oh=419488ddb55db525cd49218d74ec1122&oe=5FFAFC56'></a>
+        <a class='logo' href='home.html'><img alt='brand Image' src='https://instagram.fnbo10-1.fna.fbcdn.net/v/t51.2885-19/s150x150/80099797_526211448244916_6398459191714906112_n.jpg?_nc_ht=instagram.fnbo10-1.fna.fbcdn.net&_nc_ohc=MxvpHbJMHmwAX8mfe7i&tp=1&oh=419488ddb55db525cd49218d74ec1122&oe=5FFAFC56'></a>
         <ul>
             <li><a href='#giftcards'> <i class="fas fa-gift    "></i><span class='itemname'>GIFTCARD</span>  </a></li>
             <!-- <li><i class='fas fa-angle-double-down'></i></li> -->
             <li><a href='#accounts'><i class="fas fa-user"></i><span class='itemname'>ACCOUNTS</span></a></li>
             <li><a href='#shop'> <i class='fas fa-shopping-bag'></i><span class='itemname'>WISHLIST</span> </a></li>
-            <li><a href='#contact_us' >contact us</a></li>
+            <li><a onclick='contact_us()' href='#contact_us' >contact us</a></li>
             </ul>
-            <label class='threeBars' for='threeBars'><i style='font-size:1cm;' class="fa fa-bars" aria-hidden="true"></i></label>
+            <label onclick = 'threebars()' class='threeBars' for='threeBars'><i style='font-size:1cm;' class="fa fa-bars" aria-hidden="true"></i></label>
         </div><hr>
 
     
-<div class="display">
+<div id='display' class="display">
+    <div class="page">
     <div class="sameline">
         <span class="item" id='1'>
         <img src="https://instagram.fnbo9-1.fna.fbcdn.net/v/t51.2885-15/e35/p1080x1080/130296490_2739574802920870_2178044594941808449_n.jpg?_nc_ht=instagram.fnbo9-1.fna.fbcdn.net&_nc_cat=110&_nc_ohc=Uwh-g-u-k34AX99OJCS&tp=1&oh=55e88fb4f53c881461df632c7351e336&oe=6003C228" alt="">
+        
         </span>
         <span class="item" id='2' >
             <img src="https://instagram.fnbo9-1.fna.fbcdn.net/v/t51.2885-15/e35/p1080x1080/130704278_221107602761122_4565166663272119691_n.jpg?_nc_ht=instagram.fnbo9-1.fna.fbcdn.net&_nc_cat=110&_nc_ohc=swlUYMg-SbEAX-paLMI&tp=1&oh=e86f96a782ef732e0945aa62ffbd0dd8&oe=6002706A" alt="">
         </span>
+        
+
+
+
+            <!-- ADD REVIEWS -->
+
+
+
+
+        <div class="details">
+            <a>Ksh3000.00</a>
+            <a href=''>Ksh3000.00</a>
+        </div>
     </div>
     <div class="sameline">
         <span id='3' class="item">
@@ -44,7 +59,12 @@
         <span id='4' class="item">
             <img src="https://instagram.fnbo10-1.fna.fbcdn.net/v/t51.2885-15/e35/p1080x1080/129745326_221912056237442_4330511271594155311_n.jpg?_nc_ht=instagram.fnbo10-1.fna.fbcdn.net&_nc_cat=102&_nc_ohc=6TM7Pcq3HqgAX_DYNSD&tp=1&oh=307808c9f74f580c2564704b8187eaa1&oe=600348D3" alt="">
         </span>
+        <div class="details">
+            <a>Ksh3000.00</a>
+            <a href=''>Ksh3000.00</a>
+        </div>
     </div>
+
     <div class="sameline">
         <span id='5' class="item">
             <img src="https://instagram.fnbo10-1.fna.fbcdn.net/v/t51.2885-15/e35/p1080x1080/129591136_168862718307657_1764922814679111796_n.jpg?_nc_ht=instagram.fnbo10-1.fna.fbcdn.net&_nc_cat=109&_nc_ohc=GF5dYiNLhTsAX_iSsi2&tp=1&oh=ac16c965ff9758402c50aeb340eefc40&oe=6000B6A7" alt="">
@@ -52,7 +72,13 @@
         <span id='6' class="item">
             <img src="https://instagram.fnbo9-1.fna.fbcdn.net/v/t51.2885-15/e35/p1080x1080/129416886_293977958658886_8962689295515555141_n.jpg?_nc_ht=instagram.fnbo9-1.fna.fbcdn.net&_nc_cat=110&_nc_ohc=psz-_vAzczkAX-cUYat&tp=1&oh=b2921fdc92d49a04bf75f5cd0b67c067&oe=6003E906" alt="">
         </span>
+        <div class="details">
+            <a>Ksh3000.00</a>
+            <a href=''>Ksh3000.00</a>
+        </div>
     </div>
+    </div>
+    <div class='page'>
     <div class="sameline">
         <span id='7' class="item">
             <img src="https://instagram.fnbo10-1.fna.fbcdn.net/v/t51.2885-15/e35/p1080x1080/129170430_3523927737683252_5182979381847755649_n.jpg?_nc_ht=instagram.fnbo10-1.fna.fbcdn.net&_nc_cat=108&_nc_ohc=o-UEpkUR8E8AX9yzgtE&tp=1&oh=4141ae09b975a5f1d5d07d7992922cfb&oe=6002B561" alt="">
@@ -60,6 +86,10 @@
         <span class="item" id="8">
             <img src="https://instagram.fnbo10-1.fna.fbcdn.net/v/t51.2885-15/e35/p1080x1080/129383984_901359980400570_3153763961515124761_n.jpg?_nc_ht=instagram.fnbo10-1.fna.fbcdn.net&_nc_cat=106&_nc_ohc=-yv9P7tL3rgAX-bKKpS&tp=1&oh=eef45ed05929de15ee1696d9e0001f95&oe=60013E50" alt="">
         </span>
+        <div class="details">
+            <a>Ksh3000.00</a>
+            <a href=''>Ksh3000.00</a>
+        </div>
     </div>
     <div class="sameline">
         <span class="item" id="9">
@@ -68,15 +98,25 @@
         <span class="item" id="10">
             <img src="https://instagram.fnbo10-1.fna.fbcdn.net/v/t51.2885-15/e35/p1080x1080/129773092_397477041372738_4609976668590122672_n.jpg?_nc_ht=instagram.fnbo10-1.fna.fbcdn.net&_nc_cat=106&_nc_ohc=6Y6JFKw1b-QAX_UOo1F&tp=1&oh=29a46294c536f0f4dd7c9d63143470cc&oe=60009970" alt="">
         </span>
+        <div class="details">
+            <a>Ksh3000.00</a>
+            <a href=''>Ksh3000.00</a>
+        </div>
     </div>
-    <div class="smaeline">
+    <div class="sameline">
         <span class="item" id="11">
             <img src="https://instagram.fnbo10-1.fna.fbcdn.net/v/t51.2885-15/e35/p1080x1080/129744584_1778018979018421_223789210483974597_n.jpg?_nc_ht=instagram.fnbo10-1.fna.fbcdn.net&_nc_cat=101&_nc_ohc=QJhjZFOrSXUAX_ob1l9&tp=1&oh=832c98caeffa020cdfe6ef5e283c7adb&oe=60026139" alt="">
         </span>
         <span class="item" id="12">
             <img src="https://instagram.fnbo9-1.fna.fbcdn.net/v/t51.2885-15/e35/p1080x1080/129297006_668717520458643_7286820582751955193_n.jpg?_nc_ht=instagram.fnbo9-1.fna.fbcdn.net&_nc_cat=103&_nc_ohc=LEv_T9wOWEwAX8sTUge&tp=1&oh=2c72265890bd9cc16f158cb2a765e07d&oe=60033040" alt="">
         </span>
+        <div class="details">
+            <a>Ksh3000.00</a>
+            <a href=''>Ksh3000.00</a>
+        </div>
     </div>
+</div>
+<div class="page">
     <div class="sameline">
         <span class="item" id="13">
             <img src="https://instagram.fnbo9-1.fna.fbcdn.net/v/t51.2885-15/e35/p1080x1080/129740258_377847576838683_2971123757054692561_n.jpg?_nc_ht=instagram.fnbo9-1.fna.fbcdn.net&_nc_cat=103&_nc_ohc=3V4cnBJ0rRsAX-fAIHG&tp=1&oh=2a0abe3a55f756acd789b3bd6ad878d8&oe=6001BB50" alt="">
@@ -84,6 +124,10 @@
         <span class="item" id="14">
             <img src="https://instagram.fnbo10-1.fna.fbcdn.net/v/t51.2885-15/e35/p1080x1080/129763336_821579378626691_1807871408969658716_n.jpg?_nc_ht=instagram.fnbo10-1.fna.fbcdn.net&_nc_cat=111&_nc_ohc=hBj-ej9r7JgAX9HD73s&tp=1&oh=65781c62c8d02eb7aaa95056cbdfae31&oe=6001A3B6" alt="">
         </span>
+        <div class="details">
+            <a>Ksh3000.00</a>
+            <a href=''>Ksh3000.00</a>
+        </div>
     </div>
     <div class="sameline">
         <span class="item" id="15">
@@ -92,6 +136,10 @@
         <span class="item" id="16">
             <img src="https://instagram.fnbo10-1.fna.fbcdn.net/v/t51.2885-15/e35/p1080x1080/129092968_141871930711650_107526330013832394_n.jpg?_nc_ht=instagram.fnbo10-1.fna.fbcdn.net&_nc_cat=106&_nc_ohc=KaPvOSEis0gAX_l6Yb0&tp=1&oh=54f3a6e24b3a08837369c95a96b50b95&oe=60040F5A" alt="">
         </span>
+        <div class="details">
+            <a>Ksh3000.00</a>
+            <a href=''>Ksh3000.00</a>
+        </div>
     </div>
     <div class="sameline">
         <span class="item" id="17">
@@ -100,7 +148,14 @@
         <span class="item" id="18">
             <img src="https://instagram.fnbo10-1.fna.fbcdn.net/v/t51.2885-15/e35/p1080x1080/129680862_963367290858873_7391244935508252067_n.jpg?_nc_ht=instagram.fnbo10-1.fna.fbcdn.net&_nc_cat=109&_nc_ohc=cv8q3kAT90oAX-2EVOn&tp=1&oh=9347de8b91a7cfc2dd0f0d32e8e1d315&oe=60008C20" alt="">
         </span>
+        <div class="details">
+            <a>Ksh3000.00</a>
+            <a href=''>Ksh3000.00</a>
+        </div>
     </div>
+</div>
+
+<div class="page">
     <div class="sameline">
         <span class="item" id="19">
             <img src="https://instagram.fnbo9-1.fna.fbcdn.net/v/t51.2885-15/e35/p1080x1080/129737492_211721390618880_2650060309893255761_n.jpg?_nc_ht=instagram.fnbo9-1.fna.fbcdn.net&_nc_cat=100&_nc_ohc=Bg1AOjrzkj0AX-Q9I0V&tp=1&oh=ee4d9890dec728128fd7439e07e92df8&oe=6000F025" alt="">
@@ -108,6 +163,10 @@
         <span class="item" id="20">
             <img src="https://instagram.fnbo9-1.fna.fbcdn.net/v/t51.2885-15/e35/p1080x1080/129188587_839537253502565_3596416032724514000_n.jpg?_nc_ht=instagram.fnbo9-1.fna.fbcdn.net&_nc_cat=105&_nc_ohc=Z17vryTg_MUAX-ljI4N&tp=1&oh=9c35d00d048ccddf0a5603e3d2324c3d&oe=600227F3" alt="">
         </span>
+        <div class="details">
+            <a>Ksh3000.00</a>
+            <a href=''>Ksh3000.00</a>
+        </div>
     </div>
     <div class="sameline">
         <span class="item" id="21">
@@ -116,6 +175,10 @@
         <span class="item" id="22">
             <img src="https://instagram.fnbo10-1.fna.fbcdn.net/v/t51.2885-15/e35/p1080x1080/129726523_441058210220562_6098879275495679603_n.jpg?_nc_ht=instagram.fnbo10-1.fna.fbcdn.net&_nc_cat=106&_nc_ohc=_w8zIBFGvLgAX_XsKvA&tp=1&oh=244a16ec54ed1dc29f22a29721a905ae&oe=60025721" alt="">
         </span>
+        <div class="details">
+            <a>Ksh3000.00</a>
+            <a href=''>Ksh3000.00</a>
+        </div>
     </div>
     <div class="sameline">
         <span class="item" id="23">
@@ -124,7 +187,13 @@
         <span class="item" id="24">
             <img src="https://instagram.fnbo10-1.fna.fbcdn.net/v/t51.2885-15/e35/p1080x1080/129721638_3514556041959657_6572978396321315661_n.jpg?_nc_ht=instagram.fnbo10-1.fna.fbcdn.net&_nc_cat=109&_nc_ohc=qSxMdYqaZ2EAX8kUicB&tp=1&oh=1f1b37f3334e9c3fcf012546de824ebc&oe=60016525" alt="">
         </span>
+        <div class="details">
+            <a>Ksh3000.00</a>
+            <a href=''>Ksh3000.00</a>
+        </div>
     </div>
+</div>
+<div class="page">
     <div class="sameline">
         <span class="item" id="25">
             <img src="https://instagram.fnbo9-1.fna.fbcdn.net/v/t51.2885-15/e35/p1080x1080/129639904_1220947131611259_1875185802140722627_n.jpg?_nc_ht=instagram.fnbo9-1.fna.fbcdn.net&_nc_cat=103&_nc_ohc=byL97NdbvPcAX-SIKGf&tp=1&oh=f85de7880461c61529336b2044a33755&oe=6001406A" alt="">
@@ -132,6 +201,10 @@
         <span class="item" id="26">
             <img src="https://instagram.fnbo9-1.fna.fbcdn.net/v/t51.2885-15/e35/p1080x1080/128931507_290384579058196_6137026352764713743_n.jpg?_nc_ht=instagram.fnbo9-1.fna.fbcdn.net&_nc_cat=104&_nc_ohc=FmeR1CkS-ZIAX-HeXFA&tp=1&oh=426acf272272dde36d7c2d7da1b65238&oe=60045987" alt="">
         </span>
+        <div class="details">
+            <a>Ksh3000.00</a>
+            <a href=''>Ksh3000.00</a>
+        </div>
     </div><div class="sameline">
         <span class="item" id="27">
             <img src="https://instagram.fnbo9-1.fna.fbcdn.net/v/t51.2885-15/e35/p1080x1080/129214577_236904471110609_4980861830197734170_n.jpg?_nc_ht=instagram.fnbo9-1.fna.fbcdn.net&_nc_cat=105&_nc_ohc=5YF6uF75e-8AX9ZhPHs&tp=1&oh=e6d0ae20e37e72393dee024377d74696&oe=6002B9A6" alt="">
@@ -139,6 +212,10 @@
         <span class="item" id="28">
             <img src="https://instagram.fnbo9-1.fna.fbcdn.net/v/t51.2885-15/e35/p1080x1080/129275214_177343600726894_1460527936539822306_n.jpg?_nc_ht=instagram.fnbo9-1.fna.fbcdn.net&_nc_cat=110&_nc_ohc=nCiWnSkPQpoAX_XejHA&tp=1&oh=0c7cc996fe70f3327ba8473cd187511b&oe=6002F26C" alt="">
         </span>
+        <div class="details">
+            <a>Ksh3000.00</a>
+            <a href=''>Ksh3000.00</a>
+        </div>
     </div><div class="sameline">
         <span class="item" id="29">
             <img src="https://instagram.fnbo9-1.fna.fbcdn.net/v/t51.2885-15/e35/p1080x1080/129159793_716982055607695_285555752614410559_n.jpg?_nc_ht=instagram.fnbo9-1.fna.fbcdn.net&_nc_cat=107&_nc_ohc=F1h6U1xiJJIAX_T27jH&tp=1&oh=d4b20dc3e98aeaac35ead7295299c880&oe=600302EB" alt="">
@@ -146,20 +223,37 @@
         <span class="item" id="30">
             <img src="https://instagram.fnbo10-1.fna.fbcdn.net/v/t51.2885-15/e35/p1080x1080/129413780_449876463076991_1540947095147497017_n.jpg?_nc_ht=instagram.fnbo10-1.fna.fbcdn.net&_nc_cat=111&_nc_ohc=tcuZ56ct_f8AX90hCe8&tp=1&oh=c31caabc1827f08fcc799e8fe12f5891&oe=6001FF8C" alt="">
         </span>
-    </div><div class="sameline">
+        <div class="details">
+            <a>Ksh3000.00</a>
+            <a href=''>Ksh3000.00</a>
+        </div>
+    </div>
+</div>
+<div class="page">
+    <div class="sameline">
         <span class="item" id="31">
             <img src="https://instagram.fnbo10-1.fna.fbcdn.net/v/t51.2885-15/e35/p1080x1080/129201560_515204686062537_1908204617366273128_n.jpg?_nc_ht=instagram.fnbo10-1.fna.fbcdn.net&_nc_cat=109&_nc_ohc=Uhtz1TF4E0YAX-F_ub_&tp=1&oh=c23da9da735cb24b4a8ca5b1c08bd35f&oe=6002530C" alt="">
         </span>
         <span class="item" id="32">
             <img src="https://instagram.fnbo10-1.fna.fbcdn.net/v/t51.2885-15/e35/p1080x1080/127437520_1269893163380625_2924389696806495359_n.jpg?_nc_ht=instagram.fnbo10-1.fna.fbcdn.net&_nc_cat=109&_nc_ohc=jZeDcY-9mksAX_luxBj&tp=1&oh=56a7a892efc9acc2f779bfa0feb5766a&oe=6000CA41" alt="">
         </span>
-    </div><div class="sameline">
+        <div class="details">
+            <a>Ksh3000.00</a>
+            <a href=''>Ksh3000.00</a>
+        </div>
+    </div>
+
+    <div class="sameline">
         <span class="item" id="33">
             <img src="https://instagram.fnbo10-1.fna.fbcdn.net/v/t51.2885-15/e35/p1080x1080/127575583_1042912192850864_7355817006134987673_n.jpg?_nc_ht=instagram.fnbo10-1.fna.fbcdn.net&_nc_cat=108&_nc_ohc=7nAmOd0X7skAX-2Kmka&tp=1&oh=ad7bd727643afb80d92ee3b1a0f067e0&oe=6002726A" alt="">
         </span>
         <span class="item" id="34">
             <img src="https://instagram.fnbo10-1.fna.fbcdn.net/v/t51.2885-15/e35/p1080x1080/128021228_1088776224876361_1613404335414640559_n.jpg?_nc_ht=instagram.fnbo10-1.fna.fbcdn.net&_nc_cat=101&_nc_ohc=LyIds4uNCDkAX-h0KZb&tp=1&oh=6f0819f71cb6b24a3f0ba0440c98fd25&oe=600330B5" alt="">
         </span>
+        <div class="details">
+            <a>Ksh3000.00</a>
+            <a href=''>Ksh3000.00</a>
+        </div>
     </div><div class="sameline">
         <span class="item" id="35">
             <img src="https://instagram.fnbo10-1.fna.fbcdn.net/v/t51.2885-15/e35/127188297_2690591331156318_7784174419490984150_n.jpg?_nc_ht=instagram.fnbo10-1.fna.fbcdn.net&_nc_cat=106&_nc_ohc=GeyvAelBN3wAX8godc6&tp=1&oh=1acb145ad9e08f49a5d295b688bcf32a&oe=600465C4" alt="">
@@ -167,13 +261,24 @@
         <span class="item" id="36">
             <img src="https://instagram.fnbo10-1.fna.fbcdn.net/v/t51.2885-15/e35/127285234_420258319132631_3603142906130714481_n.jpg?_nc_ht=instagram.fnbo10-1.fna.fbcdn.net&_nc_cat=111&_nc_ohc=Fb5pqTuuOnsAX_bgGdQ&tp=1&oh=e4133db6b581e8b53ded9fe091eb1d60&oe=6002750A" alt="">
         </span>
-    </div><div class="sameline">
+        <div class="details">
+            <a>Ksh3000.00</a>
+            <a href=''>Ksh3000.00</a>
+        </div>
+    </div>
+</div>
+<div class="page">
+    <div class="sameline">
         <span class="item" id="37">
             <img src="https://instagram.fnbo10-1.fna.fbcdn.net/v/t51.2885-15/e35/127111087_800211220820485_1438992688032547483_n.jpg?_nc_ht=instagram.fnbo10-1.fna.fbcdn.net&_nc_cat=101&_nc_ohc=ubfA9HfjPSwAX_Zv1Wo&tp=1&oh=fb3e68ac6bf7c4e94d6916e2b44ffff9&oe=6000E776" alt="">
         </span>
         <span class="item" id="38">
             <img src="https://instagram.fnbo9-1.fna.fbcdn.net/v/t51.2885-15/e35/127165608_716319942312022_8375666560619055883_n.jpg?_nc_ht=instagram.fnbo9-1.fna.fbcdn.net&_nc_cat=110&_nc_ohc=X7Tzw_nVxwAAX_awzH_&tp=1&oh=62cdf3728a9b8ae875c84286709b856d&oe=6000B6DC" alt="">
         </span>
+        <div class="details">
+            <a>Ksh3000.00</a>
+            <a href=''>Ksh3000.00</a>
+        </div>
     </div><div class="sameline">
         <span class="item" id="39">
             <img src="https://instagram.fnbo9-1.fna.fbcdn.net/v/t51.2885-15/e35/p1080x1080/127054359_739323456938801_1859817031290144709_n.jpg?_nc_ht=instagram.fnbo9-1.fna.fbcdn.net&_nc_cat=105&_nc_ohc=I07ONxVXR7kAX9qWDq6&tp=1&oh=c84feaf0b4f56d77e185465179dfb199&oe=60034739" alt="">
@@ -182,6 +287,10 @@
         <span class='item' id='40' >
         <img src="https://instagram.fnbo10-1.fna.fbcdn.net/v/t51.2885-15/e35/p1080x1080/127256444_1001943970315538_7585357871417954257_n.jpg?_nc_ht=instagram.fnbo10-1.fna.fbcdn.net&_nc_cat=102&_nc_ohc=12-t7KTaoqYAX-uhXYY&tp=1&oh=e8ade077b0d062e0077aa3d5c5042661&oe=6001736D" alt="">
         </span>
+        <div class="details">
+            <a>Ksh3000.00</a>
+            <a href=''>Ksh3000.00</a>
+        </div>
     </div><div class="sameline">
         <span class="item" id="41">
             <img src="https://instagram.fnbo9-1.fna.fbcdn.net/v/t51.2885-15/e35/p1080x1080/127182979_3568542539928094_7342341073201369624_n.jpg?_nc_ht=instagram.fnbo9-1.fna.fbcdn.net&_nc_cat=110&_nc_ohc=lUpDfiZCBGwAX-wCcNl&tp=1&oh=a05be160c4cfbf04004cbc6fc5b61a8d&oe=6000BB93" alt="">
@@ -189,13 +298,25 @@
         <span class="item" id="42">
             <img src="https://instagram.fnbo10-1.fna.fbcdn.net/v/t51.2885-15/e35/p1080x1080/127303499_1067104863736607_3109309803133030614_n.jpg?_nc_ht=instagram.fnbo10-1.fna.fbcdn.net&_nc_cat=111&_nc_ohc=A9qcd2pf308AX-9s7gh&tp=1&oh=7dc6f56f7310921bca9948a6420f523b&oe=600443CC" alt="">
         </span>  
-    </div><div class="sameline">
+        <div class="details">
+            <a>Ksh3000.00</a>
+            <a href=''>Ksh3000.00</a>
+        </div>
+    </div>
+    
+</div>
+<div class="page">
+    <div class="sameline">
         <span class="item" id="43">
             <img src="https://instagram.fnbo9-1.fna.fbcdn.net/v/t51.2885-15/e35/p1080x1080/127390739_394762781722984_3431746741862276731_n.jpg?_nc_ht=instagram.fnbo9-1.fna.fbcdn.net&_nc_cat=104&_nc_ohc=FhZkTTpPRegAX-Fi_a0&tp=1&oh=167ac8d776087ad20301aa499ee194d7&oe=6002FFDF" alt="">
         </span>
         <span class="item" id="44">
             <img src="https://instagram.fnbo10-1.fna.fbcdn.net/v/t51.2885-15/e35/p1080x1080/127478938_646517386015562_3541712427641969385_n.jpg?_nc_ht=instagram.fnbo10-1.fna.fbcdn.net&_nc_cat=102&_nc_ohc=M6rAGwC9s68AX-I_z8D&tp=1&oh=3273e197cc6c80b391af86cb4184eb35&oe=6000E189" alt="">
         </span>
+        <div class="details">
+            <a>Ksh3000.00</a>
+            <a href=''>Ksh3000.00</a>
+        </div>
     </div><div class="sameline">
         <span class="item" id="45">
             <img src="https://instagram.fnbo9-1.fna.fbcdn.net/v/t51.2885-15/e35/p1080x1080/126879654_224295062378273_858196018846179746_n.jpg?_nc_ht=instagram.fnbo9-1.fna.fbcdn.net&_nc_cat=105&_nc_ohc=CjIjgpvTn2IAX9zMFkw&tp=1&oh=e10309345adb8db2108372479831951b&oe=60041154" alt="">
@@ -203,6 +324,10 @@
         <span class="item" id="46">
             <img src="https://instagram.fnbo9-1.fna.fbcdn.net/v/t51.2885-15/e35/p1080x1080/127184452_138123824364931_5767550866553267176_n.jpg?_nc_ht=instagram.fnbo9-1.fna.fbcdn.net&_nc_cat=107&_nc_ohc=_j7khRQI0bAAX8GZpN6&tp=1&oh=d3afec6e41a1a7226eb33406d4598b4f&oe=6000BD19" alt="">
         </span>
+        <div class="details">
+            <a>Ksh3000.00</a>
+            <a href=''>Ksh3000.00</a>
+        </div>
     </div><div class="sameline">
         <span class="item" id="47">
             <img src="https://instagram.fnbo10-1.fna.fbcdn.net/v/t51.2885-15/e35/126221647_200228428284630_6181333756160126727_n.jpg?_nc_ht=instagram.fnbo10-1.fna.fbcdn.net&_nc_cat=106&_nc_ohc=-3YdosUGbC8AX9Bn0Jr&tp=1&oh=20cab9df5eeeb1f54c2823a9a609a411&oe=60035605" alt="">
@@ -210,13 +335,24 @@
         <span class="item" id="48">
             <img src="https://instagram.fnbo9-1.fna.fbcdn.net/v/t51.2885-15/e35/p1080x1080/126020296_202531244608356_2184408088958507287_n.jpg?_nc_ht=instagram.fnbo9-1.fna.fbcdn.net&_nc_cat=100&_nc_ohc=csNPN0PCdA8AX8qDH4I&tp=1&oh=5f9e788ed9b252ba62e97aa861b49e03&oe=600468AB" alt="">
         </span>
-    </div><div class="sameline">
+        <div class="details">
+            <a>Ksh3000.00</a>
+            <a href=''>Ksh3000.00</a>
+        </div>
+    </div>
+</div>
+<div class="page">
+    <div class="sameline">
         <span class="item" id="49">
             <img src="https://instagram.fnbo9-1.fna.fbcdn.net/v/t51.2885-15/e35/p1080x1080/127250889_2753354888314385_387665559469492470_n.jpg?_nc_ht=instagram.fnbo9-1.fna.fbcdn.net&_nc_cat=105&_nc_ohc=iIAbQHHe2s8AX8Qxrku&tp=1&oh=be40003481348ee760ea630a770e8c8e&oe=600346E3" alt="">
         </span>
         <span class="item" id="50">
             <img src="https://instagram.fnbo10-1.fna.fbcdn.net/v/t51.2885-15/e35/p1080x1080/125928014_1925080137633539_7313653344435116808_n.jpg?_nc_ht=instagram.fnbo10-1.fna.fbcdn.net&_nc_cat=111&_nc_ohc=9q8CqMRSV9gAX8OKKFE&tp=1&oh=1c562c7f6c315e1ea1abc27d000fc3c3&oe=60042481" alt="">
         </span>
+        <div class="details">
+            <a>Ksh3000.00</a>
+            <a href=''>Ksh3000.00</a>
+        </div>
 
     </div><div class="sameline">
         <span class="item" id="51">
@@ -225,6 +361,10 @@
         <span class="item" id="52">
             <img src="https://instagram.fnbo9-1.fna.fbcdn.net/v/t51.2885-15/e35/p1080x1080/126105344_208119360663139_2697710143648158736_n.jpg?_nc_ht=instagram.fnbo9-1.fna.fbcdn.net&_nc_cat=107&_nc_ohc=8DZKAVxEcOsAX8QH4zI&tp=1&oh=dc0f9e5c8891c4e71aeecea23a3a11dc&oe=60018E46" alt="">
         </span>
+        <div class="details">
+            <a>Ksh3000.00</a>
+            <a href=''>Ksh3000.00</a>
+        </div>
     </div><div class="sameline">
         <span class="item" id="53">
             <img src="https://instagram.fnbo10-1.fna.fbcdn.net/v/t51.2885-15/e35/p1080x1080/127125941_3530410413703317_6462846133996008029_n.jpg?_nc_ht=instagram.fnbo10-1.fna.fbcdn.net&_nc_cat=109&_nc_ohc=zyHTuEMkoeQAX8dN224&tp=1&oh=14bb29e21f13dc93ffe36689a33b3a47&oe=6002E2C3" alt="">
@@ -232,46 +372,509 @@
         <span class="item" id="54">
             <img src="https://instagram.fnbo9-1.fna.fbcdn.net/v/t51.2885-15/e35/p1080x1080/126191755_419191292727375_4980486999843115248_n.jpg?_nc_ht=instagram.fnbo9-1.fna.fbcdn.net&_nc_cat=103&_nc_ohc=HPrxK3MUFYUAX8Bii7J&tp=1&oh=042377c60fef35062e19e440bb2f2609&oe=60044F95" alt="">
         </span>
-    </div><div class="sameline">
-  
-    </div><div class="sameline">
-    </div><div class="sameline">
-    </div><div class="sameline">
-    </div><div class="sameline">
-    </div><div class="sameline">
-    </div><div class="sameline">
-    </div><div class="sameline">
-    </div><div class="sameline">
-    </div><div class="sameline">
-    </div><div class="sameline">
-    </div><div class="sameline">
-    </div><div class="sameline">
-    </div><div class="sameline">
-    </div><div class="sameline">
-    </div><div class="sameline">
-    </div><div class="sameline">
-    </div><div class="sameline">
-    </div><div class="sameline">
-    </div><div class="sameline">
-    </div><div class="sameline">
-    </div><div class="sameline">
-    </div><div class="sameline">
-    </div><div class="sameline">
-    </div><div class="sameline">
-    </div><div class="sameline">
-    </div><div class="sameline">
-    </div><div class="sameline">      
-    </div><div class="sameline">
-    </div><div class="sameline">
-    </div><div class="sameline">
+        <div class="details">
+            <a>Ksh3000.00</a>
+            <a href=''>Ksh3000.00</a>
+        </div>
+</div>
         </div>
 
 </div>
 
+<div  class="pageref">
+    <i onclick='leftfunc()' id='left-arrow' class="fas fa-angle-double-left    "></i>
+    <label id='pg1' onclick='pageone()' for="pageref1">1</label>
+    <input type="radio" name="page1" id="pageref1">
+    <label id='pg2' onclick ='pagetwo()' for="pageref2">2</label>
+    <input type="radio" name="page2" id="pageref2">
+    <label id='pg3' onclick = 'pagethree()' for="pageref3">3</label>
+    <input type="radio" name="page3" id="pageref3">
+    <label id='pg4' onclick = 'pagefour()' for="pageref4">4</label>
+    <input type="radio" name="page4" id="pageref4">
+    <label id='pg5' onclick = 'pagefive()' for="pageref4">5</label>
+    <label id='pg6'  onclick = 'pagesix()' for="pageref4">6</label>
+    <label id='pg7' onclick = 'pageseven()' for="pageref4">7</label>
+    <label id='pg8' onclick = 'pageeight()' for="pageref4">8</label>
+    <label id='pg9' onclick = 'pagenine()' for="pageref4">9</label>
+    <i onclick='rightfunc()' id='right-arrow' class="fas fa-angle-double-right    "></i>
+</div>
+
+<script>
+        var pageref = document.getElementsByClassName('page');
+        var page1 = pageref[0];
+        var page2 = pageref[1];
+        var page3 = pageref[2];
+        var page4 = pageref[3];
+        var page5 = pageref[4];
+        var page6 = pageref[5];
+        var page7 = pageref[6];
+        var page8 = pageref[7];
+        var page9 = pageref[8];
+
+        page2.style.display = 'none';
+        page3.style.display = 'none';
+        page4.style.display = 'none';
+        page5.style.display = 'none';
+        page6.style.display = 'none';
+        page7.style.display = 'none';
+        page8.style.display = 'none';
+        page9.style.display = 'none';
+        var page = document.getElementById('pg1');
+        page.style.opacity = '1';
+        page.style.background = 'blue';
+        var left = document.getElementById('left-arrow');
+        var right = document.getElementById('right-arrow');
+
+        var page1ref = document.getElementById('pg1');
+    var page2ref = document.getElementById('pg2');
+    var page3ref = document.getElementById('pg3');
+    var page4ref = document.getElementById('pg4');
+    var page5ref = document.getElementById('pg5');
+    var page6ref = document.getElementById('pg6');
+    var page7ref = document.getElementById('pg7');
+    var page8ref = document.getElementById('pg8');
+    var page9ref = document.getElementById('pg9');
+
+    function rightfunc(){
+        if(page1ref.style.background == 'blue'){
+            page2ref.click();
+        }
+        if(page2ref.style.background == 'blue'){
+            page3ref.click();
+        }
+        if(page3ref.style.background == 'blue'){
+            page4ref.click();
+        }
+        if(page4ref.style.background == 'blue'){
+            page5ref.click();
+        }
+        if(page5ref.style.background == 'blue'){
+            page6ref.click();
+        }
+        if(page6ref.style.background == 'blue'){
+            page7ref.click();
+        }
+        if(page7ref.style.background == 'blue'){
+            page8ref.click();
+        }
+        if(page8ref.style.background == 'blue'){
+            page9ref.click();
+        }
+    }
 
 
+function leftfunc(){
 
-    <div class="about">
+    var xxleo = document.getElementById('pg2');
+    var page2refcheck = xxleo.style.background;
+    if(page2refcheck == 'blue'){
+        page1ref.click();
+    }
+    if(page3ref.style.background == 'blue'){
+        page2ref.click();
+    }
+    if(page4ref.style.background == 'blue'){
+        page3ref.click();
+    }
+    if(page5ref.style.background == 'blue'){
+        page4ref.click();
+    }
+    if(page6ref.style.background == 'blue'){
+        page5ref.click();
+    }
+    if(page7ref.style.background == 'blue'){
+        page6ref.click();
+    }
+    if(page8ref.style.background == 'blue'){
+        page7ref.click();
+    }
+    if(page9ref.style.background == 'blue'){
+        page8ref.click();
+    }
+        
+}
+
+function pageone(){
+    page1.style.display = 'contents';
+    page2.style.display = 'none';
+    page3.style.display = 'none';
+    page4.style.display = 'none';
+    page5.style.display = 'none';
+    page6.style.display = 'none';
+    page7.style.display = 'none';
+    page8.style.display = 'none';
+    page9.style.display = 'none';
+
+    var page = document.getElementById('pg1');
+    page.style.opacity = '1';
+    page.style.background = 'blue';
+    var otherpages = document.getElementById('pg2');
+    otherpages.style.background = 'rgb(160, 66, 66)';
+    otherpages.style.opacity = '0.7';
+    var otherpages = document.getElementById('pg3');
+    otherpages.style.background = 'rgb(160, 66, 66)';
+    otherpages.style.opacity = '0.7';
+    var otherpages = document.getElementById('pg4');
+    otherpages.style.background = 'rgb(160, 66, 66)';
+    otherpages.style.opacity = '0.7';
+    var otherpages = document.getElementById('pg5');
+    otherpages.style.background = 'rgb(160, 66, 66)';
+    otherpages.style.opacity = '0.7';
+    var otherpages = document.getElementById('pg6');
+    otherpages.style.background = 'rgb(160, 66, 66)';
+    otherpages.style.opacity = '0.7';
+    var otherpages = document.getElementById('pg7');
+    otherpages.style.background = 'rgb(160, 66, 66)';
+    otherpages.style.opacity = '0.7';
+    var otherpages = document.getElementById('pg8');
+    otherpages.style.background = 'rgb(160, 66, 66)';
+    otherpages.style.opacity = '0.7';
+    var otherpages = document.getElementById('pg9');
+    otherpages.style.background = 'rgb(160, 66, 66)';
+    otherpages.style.opacity = '0.7';
+    left.style.cursor = 'not-allowed';
+    right.style.cursor = 'pointer';
+
+}
+function pagetwo(){
+    page1.style.display = 'none';
+    page2.style.display = 'contents';
+    page3.style.display = 'none';
+    page4.style.display = 'none';
+    page5.style.display = 'none';
+    page6.style.display = 'none';
+    page7.style.display = 'none';
+    page8.style.display = 'none';
+    page9.style.display = 'none';
+    left.style.cursor = 'pointer';
+
+    var page = document.getElementById('pg2');
+        page.style.opacity = '1';
+        page.style.background = 'blue';
+
+        var otherpages = document.getElementById('pg1');
+    otherpages.style.background = 'rgb(160, 66, 66)';
+    otherpages.style.opacity = '0.7';
+    var otherpages = document.getElementById('pg3');
+    otherpages.style.background = 'rgb(160, 66, 66)';
+    otherpages.style.opacity = '0.7';
+    var otherpages = document.getElementById('pg4');
+    otherpages.style.background = 'rgb(160, 66, 66)';
+    otherpages.style.opacity = '0.7';
+    var otherpages = document.getElementById('pg5');
+    otherpages.style.background = 'rgb(160, 66, 66)';
+    otherpages.style.opacity = '0.7';
+    var otherpages = document.getElementById('pg6');
+    otherpages.style.background = 'rgb(160, 66, 66)';
+    otherpages.style.opacity = '0.7';
+    var otherpages = document.getElementById('pg7');
+    otherpages.style.background = 'rgb(160, 66, 66)';
+    otherpages.style.opacity = '0.7';
+    var otherpages = document.getElementById('pg8');
+    otherpages.style.background = 'rgb(160, 66, 66)';
+    otherpages.style.opacity = '0.7';
+    var otherpages = document.getElementById('pg9');
+    otherpages.style.background = 'rgb(160, 66, 66)';
+    otherpages.style.opacity = '0.7';
+    right.style.cursor = 'pointer';
+}
+function pagethree(){
+    left.style.cursor = 'pointer';
+    right.style.cursor = 'pointer';
+    page1.style.display = 'none';
+    page2.style.display = 'none';
+    page3.style.display = 'contents';
+    page4.style.display = 'none';
+    page5.style.display = 'none';
+    page6.style.display = 'none';
+    page7.style.display = 'none';
+    page8.style.display = 'none';
+    page9.style.display = 'none';
+
+    var page = document.getElementById('pg3');
+        page.style.opacity = '1';
+        page.style.background = 'blue';
+
+        var otherpages = document.getElementById('pg2');
+    otherpages.style.background = 'rgb(160, 66, 66)';
+    otherpages.style.opacity = '0.7';
+    var otherpages = document.getElementById('pg1');
+    otherpages.style.background = 'rgb(160, 66, 66)';
+    otherpages.style.opacity = '0.7';
+    var otherpages = document.getElementById('pg4');
+    otherpages.style.background = 'rgb(160, 66, 66)';
+    otherpages.style.opacity = '0.7';
+    var otherpages = document.getElementById('pg5');
+    otherpages.style.background = 'rgb(160, 66, 66)';
+    otherpages.style.opacity = '0.7';
+    var otherpages = document.getElementById('pg6');
+    otherpages.style.background = 'rgb(160, 66, 66)';
+    otherpages.style.opacity = '0.7';
+    var otherpages = document.getElementById('pg7');
+    otherpages.style.background = 'rgb(160, 66, 66)';
+    otherpages.style.opacity = '0.7';
+    var otherpages = document.getElementById('pg8');
+    otherpages.style.background = 'rgb(160, 66, 66)';
+    otherpages.style.opacity = '0.7';
+    var otherpages = document.getElementById('pg9');
+    otherpages.style.background = 'rgb(160, 66, 66)';
+    otherpages.style.opacity = '0.7';
+}
+function pagefour(){
+    page1.style.display = 'none';
+    page2.style.display = 'none';
+    page3.style.display = 'none';
+    page4.style.display = 'contents';
+    page5.style.display = 'none';
+    page6.style.display = 'none';
+    page7.style.display = 'none';
+    page8.style.display = 'none';
+    page9.style.display = 'none';
+
+    var page = document.getElementById('pg4');
+        page.style.opacity = '1';
+        page.style.background = 'blue';
+
+        var otherpages = document.getElementById('pg2');
+    otherpages.style.background = 'rgb(160, 66, 66)';
+    otherpages.style.opacity = '0.7';
+    var otherpages = document.getElementById('pg3');
+    otherpages.style.background = 'rgb(160, 66, 66)';
+    otherpages.style.opacity = '0.7';
+    var otherpages = document.getElementById('pg1');
+    otherpages.style.background = 'rgb(160, 66, 66)';
+    otherpages.style.opacity = '0.7';
+    var otherpages = document.getElementById('pg5');
+    otherpages.style.background = 'rgb(160, 66, 66)';
+    otherpages.style.opacity = '0.7';
+    var otherpages = document.getElementById('pg6');
+    otherpages.style.background = 'rgb(160, 66, 66)';
+    otherpages.style.opacity = '0.7';
+    var otherpages = document.getElementById('pg7');
+    otherpages.style.background = 'rgb(160, 66, 66)';
+    otherpages.style.opacity = '0.7';
+    var otherpages = document.getElementById('pg8');
+    otherpages.style.background = 'rgb(160, 66, 66)';
+    otherpages.style.opacity = '0.7';
+    var otherpages = document.getElementById('pg9');
+    otherpages.style.background = 'rgb(160, 66, 66)';
+    otherpages.style.opacity = '0.7';
+    left.style.cursor = 'pointer';
+    right.style.cursor = 'pointer';
+}function pagefive(){
+    left.style.cursor = 'pointer';
+    right.style.cursor = 'pointer';
+    page1.style.display = 'none';
+    page2.style.display = 'none';
+    page3.style.display = 'none';
+    page4.style.display = 'none';
+    page5.style.display = 'contents';
+    page6.style.display = 'none';
+    page7.style.display = 'none';
+    page8.style.display = 'none';
+    page9.style.display = 'none';
+
+    var page = document.getElementById('pg5');
+        page.style.opacity = '1';
+        page.style.background = 'blue';
+
+        var otherpages = document.getElementById('pg2');
+    otherpages.style.background = 'rgb(160, 66, 66)';
+    otherpages.style.opacity = '0.7';
+    var otherpages = document.getElementById('pg3');
+    otherpages.style.background = 'rgb(160, 66, 66)';
+    otherpages.style.opacity = '0.7';
+    var otherpages = document.getElementById('pg4');
+    otherpages.style.background = 'rgb(160, 66, 66)';
+    otherpages.style.opacity = '0.7';
+    var otherpages = document.getElementById('pg1');
+    otherpages.style.background = 'rgb(160, 66, 66)';
+    otherpages.style.opacity = '0.7';
+    var otherpages = document.getElementById('pg6');
+    otherpages.style.background = 'rgb(160, 66, 66)';
+    otherpages.style.opacity = '0.7';
+    var otherpages = document.getElementById('pg7');
+    otherpages.style.background = 'rgb(160, 66, 66)';
+    otherpages.style.opacity = '0.7';
+    var otherpages = document.getElementById('pg8');
+    otherpages.style.background = 'rgb(160, 66, 66)';
+    otherpages.style.opacity = '0.7';
+    var otherpages = document.getElementById('pg9');
+    otherpages.style.background = 'rgb(160, 66, 66)';
+    otherpages.style.opacity = '0.7';
+}
+function pagesix(){
+    page1.style.display = 'none';
+    page2.style.display = 'none';
+    page3.style.display = 'none';
+    page4.style.display = 'none';
+    page5.style.display = 'none';
+    page6.style.display = 'contents';
+    page7.style.display = 'none';
+    page8.style.display = 'none';
+    page9.style.display = 'none';
+
+    var page = document.getElementById('pg6');
+        page.style.opacity = '1';
+        page.style.background = 'blue';
+    
+        var otherpages = document.getElementById('pg2');
+    otherpages.style.background = 'rgb(160, 66, 66)';
+    otherpages.style.opacity = '0.7';
+    var otherpages = document.getElementById('pg3');
+    otherpages.style.background = 'rgb(160, 66, 66)';
+    otherpages.style.opacity = '0.7';
+    var otherpages = document.getElementById('pg4');
+    otherpages.style.background = 'rgb(160, 66, 66)';
+    otherpages.style.opacity = '0.7';
+    var otherpages = document.getElementById('pg5');
+    otherpages.style.background = 'rgb(160, 66, 66)';
+    otherpages.style.opacity = '0.7';
+    var otherpages = document.getElementById('pg1');
+    otherpages.style.background = 'rgb(160, 66, 66)';
+    otherpages.style.opacity = '0.7';
+    var otherpages = document.getElementById('pg7');
+    otherpages.style.background = 'rgb(160, 66, 66)';
+    otherpages.style.opacity = '0.7';
+    var otherpages = document.getElementById('pg8');
+    otherpages.style.background = 'rgb(160, 66, 66)';
+    otherpages.style.opacity = '0.7';
+    var otherpages = document.getElementById('pg9');
+    otherpages.style.background = 'rgb(160, 66, 66)';
+    otherpages.style.opacity = '0.7';
+    left.style.cursor = 'pointer';
+    right.style.cursor = 'pointer';
+}
+function pageseven(){
+    left.style.cursor = 'pointer';
+    right.style.cursor = 'pointer';
+    page1.style.display = 'none';
+    page2.style.display = 'none';
+    page3.style.display = 'none';
+    page4.style.display = 'none';
+    page5.style.display = 'none';
+    page6.style.display = 'none';
+    page7.style.display = 'contents';
+    page8.style.display = 'none';
+    page9.style.display = 'none';
+
+    var page = document.getElementById('pg7');
+        page.style.opacity = '1';
+        page.style.background = 'blue';
+    
+        var otherpages = document.getElementById('pg2');
+    otherpages.style.background = 'rgb(160, 66, 66)';
+    otherpages.style.opacity = '0.7';
+    var otherpages = document.getElementById('pg3');
+    otherpages.style.background = 'rgb(160, 66, 66)';
+    otherpages.style.opacity = '0.7';
+    var otherpages = document.getElementById('pg4');
+    otherpages.style.background = 'rgb(160, 66, 66)';
+    otherpages.style.opacity = '0.7';
+    var otherpages = document.getElementById('pg5');
+    otherpages.style.background = 'rgb(160, 66, 66)';
+    otherpages.style.opacity = '0.7';
+    var otherpages = document.getElementById('pg6');
+    otherpages.style.background = 'rgb(160, 66, 66)';
+    otherpages.style.opacity = '0.7';
+    var otherpages = document.getElementById('pg1');
+    otherpages.style.background = 'rgb(160, 66, 66)';
+    otherpages.style.opacity = '0.7';
+    var otherpages = document.getElementById('pg8');
+    otherpages.style.background = 'rgb(160, 66, 66)';
+    otherpages.style.opacity = '0.7';
+    var otherpages = document.getElementById('pg9');
+    otherpages.style.background = 'rgb(160, 66, 66)';
+    otherpages.style.opacity = '0.7';
+}
+function pageeight(){
+    page1.style.display = 'none';
+    page2.style.display = 'none';
+    page3.style.display = 'none';
+    page4.style.display = 'none';
+    page5.style.display = 'none';
+    page6.style.display = 'none';
+    page7.style.display = 'none';
+    page8.style.display = 'contents';
+    page9.style.display = 'none';
+
+    var page = document.getElementById('pg8');
+        page.style.opacity = '1';
+        page.style.background = 'blue';
+    
+        var otherpages = document.getElementById('pg2');
+    otherpages.style.background = 'rgb(160, 66, 66)';
+    otherpages.style.opacity = '0.7';
+    var otherpages = document.getElementById('pg3');
+    otherpages.style.background = 'rgb(160, 66, 66)';
+    otherpages.style.opacity = '0.7';
+    var otherpages = document.getElementById('pg4');
+    otherpages.style.background = 'rgb(160, 66, 66)';
+    otherpages.style.opacity = '0.7';
+    var otherpages = document.getElementById('pg5');
+    otherpages.style.background = 'rgb(160, 66, 66)';
+    otherpages.style.opacity = '0.7';
+    var otherpages = document.getElementById('pg6');
+    otherpages.style.background = 'rgb(160, 66, 66)';
+    otherpages.style.opacity = '0.7';
+    var otherpages = document.getElementById('pg7');
+    otherpages.style.background = 'rgb(160, 66, 66)';
+    otherpages.style.opacity = '0.7';
+    var otherpages = document.getElementById('pg1');
+    otherpages.style.background = 'rgb(160, 66, 66)';
+    otherpages.style.opacity = '0.7';
+    var otherpages = document.getElementById('pg9');
+    otherpages.style.background = 'rgb(160, 66, 66)';
+    otherpages.style.opacity = '0.7';
+    left.style.cursor = 'pointer';
+    right.style.cursor = 'pointer';
+}
+function pagenine(){
+    left.style.cursor = 'pointer';
+    right.style.cursor = 'not-allowed';
+    page1.style.display = 'none';
+    page2.style.display = 'none';
+    page3.style.display = 'none';
+    page4.style.display = 'none';
+    page5.style.display = 'none';
+    page6.style.display = 'none';
+    page7.style.display = 'none';
+    page8.style.display = 'none';
+    page9.style.display = 'contents';
+
+    var page = document.getElementById('pg9');
+        page.style.opacity = '1';
+        page.style.background = 'blue';
+    
+        var otherpages = document.getElementById('pg2');
+    otherpages.style.background = 'rgb(160, 66, 66)';
+    otherpages.style.opacity = '0.7';
+    var otherpages = document.getElementById('pg3');
+    otherpages.style.background = 'rgb(160, 66, 66)';
+    otherpages.style.opacity = '0.7';
+    var otherpages = document.getElementById('pg4');
+    otherpages.style.background = 'rgb(160, 66, 66)';
+    otherpages.style.opacity = '0.7';
+    var otherpages = document.getElementById('pg5');
+    otherpages.style.background = 'rgb(160, 66, 66)';
+    otherpages.style.opacity = '0.7';
+    var otherpages = document.getElementById('pg6');
+    otherpages.style.background = 'rgb(160, 66, 66)';
+    otherpages.style.opacity = '0.7';
+    var otherpages = document.getElementById('pg7');
+    otherpages.style.background = 'rgb(160, 66, 66)';
+    otherpages.style.opacity = '0.7';
+    var otherpages = document.getElementById('pg8');
+    otherpages.style.background = 'rgb(160, 66, 66)';
+    otherpages.style.opacity = '0.7';
+    var otherpages = document.getElementById('pg1');
+    otherpages.style.background = 'rgb(160, 66, 66)';
+    otherpages.style.opacity = '0.7';
+}
+</script>
+
+
+    <div id='about' class="about">
         <div class='contact_us' id='contact_us' >
             <ul>
                 <li><a href='https://www.instagram.com/thrift._.trendy/'><i style='font-size:1cm;background:linear-gradient(rgb(109, 11, 167),red,yellow);padding:0;border-radius: 1cm;' class="fa fa-instagram" aria-hidden="true"></i></a></li>
@@ -305,5 +908,8 @@
             </div>
         </div>
     </div>
+
+
+
 </body>
 </html>

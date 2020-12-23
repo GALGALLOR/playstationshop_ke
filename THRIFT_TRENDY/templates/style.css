@@ -52,6 +52,7 @@ body{
 }
 
 
+
 .slides figure img{
     width:12.9%;
     padding:0 3.5%;
@@ -260,7 +261,7 @@ input[type=checkbox]{
 
 h1{
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    text-decoration: underline;
+    
 }
 
 
@@ -566,11 +567,64 @@ input{
 
 .display img{
     width:40%;
+
 }
 
+#threeBars:checked ~ .about{
+    position:absolute;
+    width:100%;
+    top:100vh;
+}
+#threeBars:checked ~ .display{
+    display:none;
+}
+
+#threeBars:checked ~ .pageref{
+    display:none;
+}
+.pageref{
+    text-align:center;
+}
+.details{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 2%;;
+}
+
+.details a{
+    margin-right:43%;
+}
+
+.sameline{
+    margin:0;
+    margin-bottom:100px;
+    padding:0;
+    margin-left:20px;
+}
+.sameline .item:nth-child(2){
+    margin:8%;
+    
+}
+
+.pageref label{
+    background:rgb(160, 66, 66);
+    padding:7px;
+    font-weight:bold;
+    opacity:0.7;
+}
+.pageref label:hover{
+    background:blue;
+    opacity:1;
+    
+}
+.pageref{
+    margin-left:20px;
+    margin-top:10px;
+}
 
 @media (max-width:1000px) and (min-width:500px) {
-
+    .details a{
+        margin-right:36%;
+    }
 
     .homedisplay img{
         height:100%;
@@ -594,7 +648,7 @@ input{
         opacity:1;
         top:0%;
         width:100%;
-        height:2000%;
+        height:650%;
         left:-200%;
         transition:0.5s;
     }
@@ -609,14 +663,12 @@ input{
     #threeBars:checked ~ .navbar ul{
         left:0;
     }
-    #threeBars:checked ~ .about{
-        position:absolute;
-        width:100%;
-       
-    }
 
 }
 @media (max-width:500px) {
+    .details a{
+        margin-right:36%;
+    }
     .homedisplay img{
         height:20vh;
     }

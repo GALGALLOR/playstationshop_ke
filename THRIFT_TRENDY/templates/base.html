@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <style>
+        img{
+            width:30%;
+            transition:0.5s;
+        }
+        #image{
+            transition:0.5s;
+        }
+    </style>
+    </head>
+<body>
+<div id='body' >
+
+<p>Hover over the checkbox to simulate a mouse-click.</p>
+
+<form>
+  <input type="checkbox" id="myCheck" onmouseover="myFunction()" >
+</form>
+<div  > <img onmouseout="unhovering()" id='image' onmouseover="hovering()" src='https://instagram.fnbo9-1.fna.fbcdn.net/v/t51.2885-15/e35/p1080x1080/131702156_1081605142291433_2126179407432248256_n.jpg?_nc_ht=instagram.fnbo9-1.fna.fbcdn.net&_nc_cat=105&_nc_ohc=s-TNG23qqGAAX81EJlY&tp=1&oh=93b0b9ccf9fb4a1ef57518fb15c1d8e3&oe=600BF756'> </div>
+<script>
+function hovering(){
+    var x = document.getElementById('image');
+    x.src = 'https://instagram.fnbo9-1.fna.fbcdn.net/v/t51.2885-15/e35/p1080x1080/126191755_419191292727375_4980486999843115248_n.jpg?_nc_ht=instagram.fnbo9-1.fna.fbcdn.net&_nc_cat=103&_nc_ohc=bHpIjBhO-nYAX_2oYKw&tp=1&oh=9ce772476c5bc05d7afafb33dce75093&oe=600C3895';
+    x.style.transition = '0.5s';
+    }
+function unhovering(){
+    var x = document.getElementById('image');
+    x.src = 'https://instagram.fnbo9-1.fna.fbcdn.net/v/t51.2885-15/e35/p1080x1080/131702156_1081605142291433_2126179407432248256_n.jpg?_nc_ht=instagram.fnbo9-1.fna.fbcdn.net&_nc_cat=105&_nc_ohc=s-TNG23qqGAAX81EJlY&tp=1&oh=93b0b9ccf9fb4a1ef57518fb15c1d8e3&oe=600BF756';
+    x.style.transition = '0.5s';
+}
+</script>
+
+</div>
+</body>
+</html>
