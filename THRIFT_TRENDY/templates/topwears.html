@@ -33,10 +33,25 @@
     <div class="sameline">
         <span class="item" id='1'>
         <img src="https://instagram.fnbo9-1.fna.fbcdn.net/v/t51.2885-15/e35/p1080x1080/130296490_2739574802920870_2178044594941808449_n.jpg?_nc_ht=instagram.fnbo9-1.fna.fbcdn.net&_nc_cat=110&_nc_ohc=Uwh-g-u-k34AX99OJCS&tp=1&oh=55e88fb4f53c881461df632c7351e336&oe=6003C228" alt="">
-        
+            
         </span>
         <span class="item" id='2' >
-            <img src="https://instagram.fnbo9-1.fna.fbcdn.net/v/t51.2885-15/e35/p1080x1080/130704278_221107602761122_4565166663272119691_n.jpg?_nc_ht=instagram.fnbo9-1.fna.fbcdn.net&_nc_cat=110&_nc_ohc=swlUYMg-SbEAX-paLMI&tp=1&oh=e86f96a782ef732e0945aa62ffbd0dd8&oe=6002706A" alt="">
+            <img  src="https://instagram.fnbo9-1.fna.fbcdn.net/v/t51.2885-15/e35/p1080x1080/130704278_221107602761122_4565166663272119691_n.jpg?_nc_ht=instagram.fnbo9-1.fna.fbcdn.net&_nc_cat=110&_nc_ohc=swlUYMg-SbEAX-paLMI&tp=1&oh=e86f96a782ef732e0945aa62ffbd0dd8&oe=6002706A" alt="">
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                <input type="hidden" name="cmd" value="_s-xclick">
+                <input type="hidden" name="hosted_button_id" value="SMG9E74GVSTXJ">
+                <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                </form>
+                
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                    <input type="hidden" name="cmd" value="_s-xclick">
+                    <input type="hidden" name="hosted_button_id" value="SMG9E74GVSTXJ">
+                    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                    <img alt="" border = '0' src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                    </form>
+                    
+                
         </span>
         
 
@@ -50,6 +65,8 @@
         <div class="details">
             <a>Ksh3000.00</a>
             <a href=''>Ksh3000.00</a>
+            
+            
         </div>
     </div>
     <div class="sameline">
@@ -384,22 +401,24 @@
 <div  class="pageref">
     <i onclick='leftfunc()' id='left-arrow' class="fas fa-angle-double-left    "></i>
     <label id='pg1' onclick='pageone()' for="pageref1">1</label>
-    <input type="radio" name="page1" id="pageref1">
     <label id='pg2' onclick ='pagetwo()' for="pageref2">2</label>
-    <input type="radio" name="page2" id="pageref2">
-    <label id='pg3' onclick = 'pagethree()' for="pageref3">3</label>
-    <input type="radio" name="page3" id="pageref3">
-    <label id='pg4' onclick = 'pagefour()' for="pageref4">4</label>
-    <input type="radio" name="page4" id="pageref4">
-    <label id='pg5' onclick = 'pagefive()' for="pageref4">5</label>
-    <label id='pg6'  onclick = 'pagesix()' for="pageref4">6</label>
-    <label id='pg7' onclick = 'pageseven()' for="pageref4">7</label>
-    <label id='pg8' onclick = 'pageeight()' for="pageref4">8</label>
-    <label id='pg9' onclick = 'pagenine()' for="pageref4">9</label>
+    <label  id='pg3' onclick = 'pagethree()' for="pageref3">3</label>
+    <label  id='pg4' onclick = 'pagefour()' for="pageref4">4</label>
+    <label  id='pg5' onclick = 'pagefive()' for="pageref4">5</label>
+    <label  id='pg6'  onclick = 'pagesix()' for="pageref4">6</label>
+    <label  id='pg7' onclick = 'pageseven()' for="pageref4">7</label>
+    <label  id='pg8' onclick = 'pageeight()' for="pageref4">8</label>
+    <label  id='pg9' onclick = 'pagenine()' for="pageref4">9</label>
     <i onclick='rightfunc()' id='right-arrow' class="fas fa-angle-double-right    "></i>
 </div>
 
 <script>
+    var x = document.getElementsByClassName("details");
+    var i;
+    for (i = 0; i < x.length; i++) {
+    x[i].innerHTML = '<a>ksh4500.00</a><a>ksh4500.00</a>'
+    }
+
         var pageref = document.getElementsByClassName('page');
         var page1 = pageref[0];
         var page2 = pageref[1];
@@ -410,6 +429,8 @@
         var page7 = pageref[6];
         var page8 = pageref[7];
         var page9 = pageref[8];
+
+        
 
         page2.style.display = 'none';
         page3.style.display = 'none';
@@ -425,7 +446,7 @@
         var left = document.getElementById('left-arrow');
         var right = document.getElementById('right-arrow');
 
-        var page1ref = document.getElementById('pg1');
+    var page1ref = document.getElementById('pg1');
     var page2ref = document.getElementById('pg2');
     var page3ref = document.getElementById('pg3');
     var page4ref = document.getElementById('pg4');
@@ -434,6 +455,8 @@
     var page7ref = document.getElementById('pg7');
     var page8ref = document.getElementById('pg8');
     var page9ref = document.getElementById('pg9');
+
+
 
     function rightfunc(){
         if(page1ref.style.background == 'blue'){
@@ -895,6 +918,7 @@ function pagenine(){
             </ul>
         </div>
         <div class="about-us">
+            
             <p>We sell to you the best Products you can find at an instant</p><br>
             <p>Only at <span class='x'>Thrift Trendy</span></p><br>
             <p>Made by Thift Trendy <i class="fa fa-copyright" aria-hidden="true"></i> 2020</p>

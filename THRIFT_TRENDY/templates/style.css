@@ -513,15 +513,18 @@ h1{
 .homedisplay img{
     height:60vh;
 }
-
+.sameline form:nth-child(2){
+    float:right;
+    margin-right:20%;
+}
 .homedisplay h1{
     text-align: center;
 }
 .threeBars{
     display: none;
 }
-input{
-    display:none
+input[type='radio']{
+    display:none;
 }
 .contact_us ul li{
     display: inline-block;
@@ -587,7 +590,7 @@ input{
 }
 .details{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin-top: 2%;;
+    
 }
 
 .details a{
