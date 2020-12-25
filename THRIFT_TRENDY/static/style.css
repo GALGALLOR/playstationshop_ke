@@ -509,13 +509,36 @@ h1{
     margin-right:5%;
 }
 
-
+.detailsbase h2{
+    border-bottom:3px solid red;
+    text-transform: uppercase;
+}
+.detailsbase{
+    width:20%;
+}
 .homedisplay img{
     height:60vh;
 }
-.sameline form:nth-child(2){
-    float:right;
-    margin-right:20%;
+button{
+    width:40%;
+    padding:0;
+    margin:0;
+    border:none;
+    cursor: pointer;
+}
+#chchch{
+    border:1px solid red;
+    background:radial-gradient(red,rgb(255, 0, 98));
+    margin-left:30%;
+    padding:0;
+    border-radius:30px;
+}
+#chchch:hover{
+    background:radial-gradient(rgb(255, 0, 98),yellow)
+}
+
+#chchch h4{
+    font-size:0.5cm;
 }
 .homedisplay h1{
     text-align: center;
@@ -569,7 +592,7 @@ input[type='radio']{
 }
 
 .display img{
-    width:40%;
+    width:100%;
 
 }
 
@@ -656,6 +679,7 @@ input[type='radio']{
         transition:0.5s;
     }
     #threeBars:checked ~ .navbar .threeBars{
+        top:8%;
         position:fixed;
     }
     #threeBars:checked ~ .slides{

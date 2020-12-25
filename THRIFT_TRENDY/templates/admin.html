@@ -1,15 +1,46 @@
+<html>
+    <body>
+<style>
+    .input {
+        display:block;
+        text-align: center;
+    }
+    input{
+        text-align: center;
+        display:block;
+        margin:10px;
+        padding:10px;
+        border:1px solid red;
+    }
+
+    body{
+        background: grey;
+    }
+    #url{
+        padding-right:5cm;
+        width:11cm;
+    }
+    #color{
+        background:linear-gradient(grey,white,lightgreen)
+
+    }
+
+</style>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Topwears</title>
     <link rel='stylesheet' href='{{ url_for("static",filename="style.css") }}'>
     <script src="https://kit.fontawesome.com/2b094ef000.js" crossorigin="anonymous"></script>
     <link rel='icon' href='https://instagram.fnbo10-1.fna.fbcdn.net/v/t51.2885-19/s150x150/80099797_526211448244916_6398459191714906112_n.jpg?_nc_ht=instagram.fnbo10-1.fna.fbcdn.net&_nc_ohc=MxvpHbJMHmwAX8mfe7i&tp=1&oh=419488ddb55db525cd49218d74ec1122&oe=5FFAFC56'>
 </head>
+<body onscroll="scrolly()" >
 
-<body>
     <input type='checkbox' id='add-how-to-purchase'>
     <input type='checkbox' id='add-how-to-track-purchase'>
     <input type='checkbox' id='add-type'>
@@ -22,49 +53,30 @@
             <!-- <li><i class='fas fa-angle-double-down'></i></li> -->
             <li><a href='#accounts'><i class="fas fa-user"></i><span class='itemname'>ACCOUNTS</span></a></li>
             <li><a href='#shop'> <i class='fas fa-shopping-bag'></i><span class='itemname'>WISHLIST</span> </a></li>
-            <li><a href='#contact_us' >contact us</a></li>
+            <li><a onclick='contact_us()' href='#contact_us' >contact us</a></li>
             </ul>
-            <label class='threeBars' for='threeBars'><i style='font-size:1cm;' class="fa fa-bars" aria-hidden="true"></i></label>
+            <label onclick = 'threebars()' class='threeBars' for='threeBars'><i style='font-size:1cm;' class="fa fa-bars" aria-hidden="true"></i></label>
         </div><hr>
 
-<img style='width:70%' src={{all[5]}} alt="">
-<div style='float:right;margin-right:40px;' class="detailsbase">
-    <h2>Item:</h2>
-    <h1>{{all[0]}}</h1>
 
-    <h2>color:</h2>
-    <h1 id='color' >{{all[1]}}</h1>
 
-    <h2>size:</h2>
-    <h1>{{all[2]}}</h1>
 
-    <h2>cost:</h2>
-    <h1>Ksh {{all[4]}}</h1>
 
+
+
+
+
+
+<form action="#" method='post'>
+<div class="input">
+<input required id='type' placeholder='Name or type of the item' type='text' name='type'>
+<input required id='cost' placeholder='cost of the item' type='text' name='cost' >
+<input required id='color' placeholder='color if the item' type="text" name='color' >
+<input required id='size' placeholder='size if the item' type='text' name='size'>
+<input required id='url' placeholder='Drag of copy paste the url here' type='text' name='url'>
 </div>
-<div class="checkout">
-    <form action='/checkout'>
-    <button  id='chchch'>
-        <h4>checkout</h4>
-    </button>
-    </form>
-</div>
-
-
-<script>
-    var color = document.getElementById('color');
-    color.style.color = color.innerHTML;
-    if (color.innerHTML =='white'){
-        color.style.padding = '10px';
-        color.style.background = 'black';
-    }
-
-
-</script>
-
-
-
-
+<input type="submit" value="Done">
+</form>
 
 
 
@@ -90,6 +102,7 @@
         </ul>
     </div>
     <div class="about-us">
+        
         <p>We sell to you the best Products you can find at an instant</p><br>
         <p>Only at <span class='x'>Thrift Trendy</span></p><br>
         <p>Made by Thift Trendy <i class="fa fa-copyright" aria-hidden="true"></i> 2020</p>
@@ -104,7 +117,10 @@
     </div>
 </div>
 
-<!--    https://api.whatsapp.com/send?phone=254759274504&text=I%27m%20coming%20from%20your%20online%20store%20and%20I%20have%20a%20question!    -->
+
+
+</body>
+</html>
 
 </body>
 </html>
